@@ -21,8 +21,8 @@ body {
 }
 
 .container{
-    margin: 0 auto;
     max-width: 800px;
+    margin: 0 auto;
     color: grey;
     font-family: sans-serif;
     padding-top: 60px;
