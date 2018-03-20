@@ -6,14 +6,14 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    articleone : {
+    'article-one' : {
         title:'Article-One|Amarnath',
         heading:'Article-One',
         date:'20Mar2018',
         content:`Hello Everone There! This IS Article OnE Of This WebPage!Hello Everone There! This IS Article OnE Of     ThisWebPage!HelloEverone There! This IS Article OnE Of This WebPage!Hello Everone There! This IS Article OnE Of This  WebPage!`
     },
     
-    articletwo : {
+    'article-two' : {
         title:'Article-Two|Amarnath',
         heading:'Article-Two',
         date:'20Mar2018',
@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articlename', function (req, res) {
-  res.send(htmltemp(atricles[articlename]));
+  res.send(createtemp(atricles[articlename]));
 });
 
 app.get('/ui/style.css', function (req, res) {
